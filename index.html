@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <title>
+        BrestonBank | Servicios financieros para particulares y empresas
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <!--BOTÓN DE AYUDA-->
+    <a href="#" class="help">
+        <img src="img/ayuda.png" alt="" class="d-none d-md-block d-sm-none" />
+    </a>
+
+    <!--NAVBAR-->
+    <nav class="container-fluid bg-white p-0">
+        <div class="nav-main p-3 d-flex justify-content-between align-items-center">
+            <a href="#"><img src="svg/logo.svg" alt="BrestonBank" /></a>
+            <div class="nav-main-items">
+                <input class="w-auto form-search" type="search" placeholder="Buscar" aria-label="Search" />
+                <a href="#" class="btn"><img src="svg/world-icon.svg" alt="" class="mb-1" /> ES</a>
+                <button class="btn btn-primary">ÁREA CLIENTES</button>
+            </div>
+            <button id="menu-icon">
+                <img src="svg/menu-icon.svg" alt="Menú" />
+            </button>
+        </div>
+        <div id="nav-sites" class="nav-links container-fluid bg-orange200">
+            <ul class="d-flex flex-wrap mb-0">
+                <li class="text-center p-3">
+                    <a class="nav-link" href="#">Cuentas y tarjetas</a>
+                </li>
+                <li class="text-center p-3">
+                    <a class="nav-link" href="#">Hipotecas</a>
+                </li>
+                <li class="text-center p-3">
+                    <a class="nav-link" href="#">Renting y productos</a>
+                </li>
+                <li class="text-center p-3">
+                    <a class="nav-link" href="#">Inversión</a>
+                </li>
+                <li class="text-center p-3">
+                    <a class="nav-link" href="#">Seguros</a>
+                </li>
+                <li class="text-center p-3">
+                    <a class="nav-link" href="#">Educación financiera</a>
+                </li>
+                <li class="text-center p-3">
+                    <a class="nav-link" href="#">Banca digital</a>
+                </li>
+                <li class="text-center p-3">
+                    <a class="nav-link" href="#">Depósitos</a>
+                </li>
+                <li class="text-center p-3">
+                    <a class="nav-link" href="#">Research</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--VENTANA NAVBAR RESPONSIVE-->
+    <div class="container-fluid bg-white position-fixed p-5" id="window-navbar">
+        <div>
+            <input class="w-100 form-search" type="search" placeholder="Buscar" aria-label="Search" />
+            <div class="d-flex mt-3 justify-content-center">
+                <a href="#" class="btn"><img src="svg/world-icon.svg" alt="" class="mb-1" /> ES</a>
+                <button class="btn btn-primary">ÁREA CLIENTES</button>
+            </div>
+        </div>
+        <hr class="container mt-5"/>
+        <ul class="container d-flex flex-wrap flex-column pb-4" id="nav-sites-menu">
+            <div class="row">
+                <div class="col">
+                    <li class="text-center p-3 pt-0">
+                        <a class="nav-link" href="#">Cuentas y tarjetas</a>
+                    </li>
+                    <li class="text-center p-3">
+                        <a class="nav-link" href="#">Hipotecas</a>
+                    </li>
+                    <li class="text-center p-3">
+                        <a class="nav-link" href="#">Renting y productos</a>
+                    </li>
+                    <li class="text-center p-3">
+                        <a class="nav-link" href="#">Inversión</a>
+                    </li>
+                    <li class="text-center p-3">
+                        <a class="nav-link" href="#">Seguros</a>
+                    </li>
+                </div>
+                <div class="col">
+                    <li class="text-center p-3">
+                        <a class="nav-link" href="#">Educación financiera</a>
+                    </li>
+                    <li class="text-center p-3">
+                        <a class="nav-link" href="#">Banca digital</a>
+                    </li>
+                    <li class="text-center p-3">
+                        <a class="nav-link" href="#">Depósitos</a>
+                    </li>
+                    <li class="text-center p-3">
+                        <a class="nav-link" href="#">Research</a>
+                    </li>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <article class="container mt-5 pt-5">
+        <!--HERO-->
+        <section class="row align-items-center mt-5 pt-5" id="hero">
+            <div class="col-md col-sm-12 animate__animated animate__fadeInLeft" id="hero-text">
+                <p class="lead opacity-75">SOMOS EL BANCO ONLINE LÍDER</p>
+                <h1 class="mt-4 display-5">
+                    Servicios financieros para particulares y empresas
+                </h1>
+                <div class="mt-4">
+                    <button class="btn btn-primary">DARSE DE ALTA</button>
+                    <button class="btn btn-simple">MÁS INFORMACIÓN</button>
+                </div>
+            </div>
+            <div class="col-md col-sm-12 animate__animated animate__fadeInRight">
+                <img src="img/chica_hero.png" alt="" class="img-fluid" />
+            </div>
+        </section>
+
+        <!--BCE-->
+        <table
+            class="table table-responsive border border-dark small animate__animated animate__fadeInDown animate__delay-1s"
+            id="bce">
+            <tr class="text-center">
+                <td colspan="2" class="p-2">NIVEL DE RIESGO</td>
+            </tr>
+            <tr class="align-items-center">
+                <td class="w-50 border border-dark p-3">
+                    <h5><span class="opacity-50">1</span> / 6</h5>
+                    Este número es indicativo del riesgo del producto, siendo 1/6
+                    indicativo de menor riesgo y 6/6 indicativo de mayor riesgo.
+                </td>
+                <td class="w-50 border border-dark pb-1 pe-3 ps-3 pt-4">
+                    Entidad adherida al Fondo de Garantía de Depósitos Español. El fondo
+                    garantiza los depósitos de dinero hasta 100.000 euros por titular de
+                    la Unión Europea y entidad.
+                </td>
+            </tr>
+        </table>
+
+        <!--TARJETAS-->
+        <div class="row align-items-center gx-5 gy-5" id="cards">
+            <div class="col-md col-sm-12">
+                <h5 class="text-orange">
+                    <span class="me-2"><img src="svg/team-icon.svg" class="icon" alt="Icono personas" />
+                    </span>
+                    PARA TODOS Y TODAS
+                </h5>
+                <h2 class="mb-4 mt-4">
+                    Nos ajustamos a tus necesidades para que estés seguro
+                </h2>
+                <p class="mb-4">
+                    Ofrecemos cuentas para cualquier tipo de usuario independientemente
+                    de su edad para que pueda realizar todo tipo de servicios.
+                </p>
+                <a href="#" class="a-link small">Descubre nuestras cuentas y tarjetas</a>
+            </div>
+            <div
+                class="col-md col-sm-12 d-flex justify-content-center animate__animated animate__fadeInRight animate__delay-2s">
+                <img src="img/tarjetas.png" alt="Tarjetas de BrestonBank" class="img-fluid" />
+            </div>
+        </div>
+
+        <!--CRACTERÍSTICAS-->
+        <div class="row align-items-center gx-5 gy-5" id="features">
+            <div
+                class="col-md col-sm-12 d-flex justify-content-center animate__animated animate__fadeInLeft animate__delay-3s">
+                <img src="img/servicios.png" alt="Dinero e hipotecas" class="img-fluid" />
+            </div>
+            <div class="col">
+                <h5 class="text-orange">
+                    <span class="me-2"><img src="svg/like-icon.svg" class="icon" alt="Icono like" /></span>A TU MANERA
+                </h5>
+                <h2 class="mt-4 mb-4">Facilidades donde y cuando quieras</h2>
+                <ul>
+                    <li>
+                        Retira dinero cuando quieras en más de 1000 cajeros por toda
+                        España.
+                    </li>
+                    <li>Sin comisiones de apertura.</li>
+                    <li>
+                        Préstamos rápidos desde 4,45% TIN fijo (4,71% TAE) con tu nómina
+                        domiciliada en BrestonBank.
+                    </li>
+                    <li>Controla tus movimientos desde la app.</li>
+                </ul>
+            </div>
+        </div>
+    </article>
+
+    <!--PRODUCTOS DE INVERSIÓN-->
+    <article id="investment" class="container-fluid">
+        <div class="container animate__animated animate__fadeIn animate__delay-4s">
+            <div class="row text-center">
+                <h5 class="text-orange">
+                    <span class="me-2"><img src="svg/icon-briefcase.svg" class="icon"
+                            alt="Icono like" /></span>PRODUCTOS DE INVERSIÓN
+                </h5>
+                <h2 class="mt-3 mb-5 text-white">Pensando en tu futuro</h2>
+            </div>
+            <div class="row gap-4 m-4">
+                <div class="col-md col-sm-12">
+                    <div class="product bg-dark d-flex">
+                        <img src="img/p_1.png" alt="Hucha con planta" class="img-product" />
+                        <div class="p-4 flex-md-1">
+                            <p class="h5 text-white">Fondos de inversión</p>
+                            <p class="text-white">
+                                Una forma cómoda de invertir a través de fondos diferente
+                                rentabilidad y plazos.
+                            </p>
+                            <a href="#" class="btn-icon mt-5">
+                                <img src="svg/arrow_icon.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-sm-12">
+                    <div class="product bg-dark d-flex">
+                        <img src="img/p_2.png" alt="Hucha con planta" class="img-product" />
+                        <div class="p-4 flex-md-1">
+                            <p class="h5 text-white">Fondos de inversión</p>
+                            <p class="text-white">
+                                Una forma cómoda de invertir a través de fondos diferente
+                                rentabilidad y plazos.
+                            </p>
+                            <a href="#" class="btn-icon mt-5">
+                                <img src="svg/arrow_icon.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gap-4 m-4">
+                <div class="col-md col-sm-12">
+                    <div class="product bg-dark d-flex">
+                        <img src="img/p_3.png" alt="Hucha con planta" class="img-product" />
+                        <div class="p-4 flex-md-1">
+                            <p class="h5 text-white">Fondos de inversión</p>
+                            <p class="text-white">
+                                Una forma cómoda de invertir a través de fondos diferente
+                                rentabilidad y plazos.
+                            </p>
+                            <a href="#" class="btn-icon mt-5">
+                                <img src="svg/arrow_icon.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-sm-12">
+                    <div class="product bg-dark d-flex">
+                        <img src="img/p_4.png" alt="Hucha con planta" class="img-product" />
+                        <div class="p-4 flex-md-1">
+                            <p class="h5 text-white">Fondos de inversión</p>
+                            <p class="text-white">
+                                Una forma cómoda de invertir a través de fondos diferente
+                                rentabilidad y plazos.
+                            </p>
+                            <a href="#" class="btn-icon mt-5">
+                                <img src="svg/arrow_icon.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gap-4 m-4">
+                <div class="col-md col-sm-12">
+                    <div class="product bg-dark d-flex">
+                        <img src="img/p_5.png" alt="Hucha con planta" class="img-product" />
+                        <div class="p-4 flex-md-1">
+                            <p class="h5 text-white">Fondos de inversión</p>
+                            <p class="text-white">
+                                Una forma cómoda de invertir a través de fondos diferente
+                                rentabilidad y plazos.
+                            </p>
+                            <a href="#" class="btn-icon mt-5">
+                                <img src="svg/arrow_icon.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-sm-12">
+                    <div class="product bg-dark d-flex">
+                        <img src="img/p_6.png" alt="Hucha con planta" class="img-product" />
+                        <div class="p-4 flex-md-1">
+                            <p class="h5 text-white">Fondos de inversión</p>
+                            <p class="text-white">
+                                Una forma cómoda de invertir a través de fondos diferente
+                                rentabilidad y plazos.
+                            </p>
+                            <a href="#" class="btn-icon mt-5">
+                                <img src="svg/arrow_icon.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="container">
+        <!--TIENDA Y SERVICIOS-->
+        <div class="row" id="shop">
+            <div class="col-12">
+                <h5 class="text-orange">
+                    <span class="me-2"><img src="svg/bag-icon.svg" class="icon" alt="Icono bolsa" /></span>PARA TI
+                </h5>
+                <h2 class="mt-4 mb-4">Somos más que un banco</h2>
+            </div>
+            <div class="col-12 row gap-4 mt-4" id="group-shop">
+                <div class="col-md col-sm-12 d-flex align-items-end p-4 ps-5">
+                    <a href="#">
+                        <h4 class="text-white">RENTING</h4>
+                        <p class="text-white">Alquila vehículos con seguro incluido</p>
+                    </a>
+                </div>
+                <div class="col-md col-sm-12 d-flex align-items-end p-4 ps-5">
+                    <a href="#">
+                        <h4 class="text-white">PRODUCTOS</h4>
+                        <p class="text-white">Compra y financia productos tecnológicos</p>
+                    </a>
+                </div>
+                <div class="col-12 d-flex align-items-end p-4 ps-5">
+                    <a href="#">
+                        <h4 class="text-white">SEGUROS DE VIDA Y SALUD</h4>
+                        <p class="text-white">
+                            Protege a ti y a los tuyos ante imprevistos
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--BRESTOBANK RESEARCh-->
+        <div class="row" id="research">
+            <div class="col-12 mb-4">
+                <h3>BrestonBank Research</h3>
+                <hr class="research-border-hr" />
+            </div>
+            <div class="col-12 row" id="news">
+                <div class="col-md col-sm-12 mb-4">
+                    <div class="new shadow d-flex flex-column">
+                        <div class="p-3 bg-new d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="small text-white brand-date">17 de septiembre</p>
+                                <hr class="band-new" />
+                            </div>
+                            <h4 class="text-white">
+                                ¿Un nuevo crash en EEUU? Posibles señales
+                            </h4>
+                        </div>
+                        <div class="p-4 flex-md-1">
+                            <p class="opacity-75 small">
+                                EEUU está muy lejos de los niveles de la burbuja del 2009 pero
+                                los tipos de interés para hipotecas suben más que nunca.
+                            </p>
+                            <div class="d-flex justify-content-between mt-4">
+                                <a href="#" class="small">Leer artículo</a>
+                                <a href="#">
+                                    <img src="svg/share_icon.svg" alt="Botón de compartir" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-sm- mb-4">
+                    <div class="new shadow d-flex flex-column">
+                        <div class="p-3 bg-new d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="small text-white brand-date">9 de septiembre</p>
+                                <hr class="band-new" />
+                            </div>
+                            <h4 class="text-white">El tope de gas en España a examen</h4>
+                        </div>
+                        <div class="p-4 flex-md-1">
+                            <p class="opacity-75 small pb-4">
+                                El mecanismo del tope gas ha supuesto un cambio en
+                                funcionamiento del sistema eléctrico en España.
+                            </p>
+                            <div class="d-flex justify-content-between mt-4">
+                                <a href="#" class="small">Leer artículo</a>
+                                <a href="#">
+                                    <img src="svg/share_icon.svg" alt="Botón de compartir" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-sm-12 mb-4">
+                    <div class="new shadow d-flex flex-column">
+                        <div class="p-3 bg-new d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="small text-white brand-date">28 de agosto</p>
+                                <hr class="band-new" />
+                            </div>
+                            <h4 class="text-white">Respuestas al euríbor</h4>
+                        </div>
+                        <div class="p-4 flex-md-1">
+                            <p class="opacity-75 small">
+                                En los últimos 12 meses el euríbor ha repuntado desde el
+                                -0,50% hasta superar el 1%. ¿Qué impacto tendrá esta subida?
+                            </p>
+                            <div class="d-flex justify-content-between mt-4">
+                                <a href="#" class="small">Leer artículo</a>
+                                <a href="#">
+                                    <img src="svg/share_icon.svg" alt="Botón de compartir" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-sm-12 mb-4">
+                    <div class="new shadow d-flex flex-column">
+                        <div class="p-3 bg-new d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="small text-white brand-date">18 de agosto</p>
+                                <hr class="band-new" />
+                            </div>
+                            <h4 class="text-white">
+                                España en la carrera por la digitalización
+                            </h4>
+                        </div>
+                        <div class="p-4 flex-md-1">
+                            <p class="opacity-75 small">
+                                La digitalización es una transformación clave en la actual
+                                revolución industrial. ¿Cómo lo está afrontando España?
+                            </p>
+                            <div class="d-flex justify-content-between mt-4">
+                                <a href="#" class="small">Leer artículo</a>
+                                <a href="#">
+                                    <img src="svg/share_icon.svg" alt="Botón de compartir" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container p-5" id="footer-links">
+            <div class="row gap-4 justify-content-center">
+                <div class="col-md col-sm-12">
+                    <img src="svg/logo.svg" alt="BrestonBank" class="mt-2" />
+                </div>
+                <div class="col-md col-sm-12">
+                    <h5 class="mb-3">Navegación</h5>
+                    <ul>
+                        <li class="small mb-3"><a href="#">Cuentas y tarjetas</a></li>
+                        <li class="small mb-3"><a href="#">Hipotecas</a></li>
+                        <li class="small mb-3"><a href="#">Renting y productos</a></li>
+                        <li class="small mb-3"><a href="#">Inversión</a></li>
+                        <li class="small mb-3"><a href="#">Seguros</a></li>
+                        <li class="small mb-3"><a href="#">Educación financiera</a></li>
+                        <li class="small mb-3"><a href="#">Banca digital</a></li>
+                        <li class="small mb-3"><a href="#">Depósitos</a></li>
+                        <li class="small mb-3"><a href="#">Research</a></li>
+                    </ul>
+                </div>
+                <div class="col-md col-sm-12">
+                    <h5 class="mb-3">De interés</h5>
+                    <ul>
+                        <li class="small mb-3"><a href="#">Política de Privacidad</a></li>
+                        <li class="small mb-3">
+                            <a href="#">Términos y condicioness</a>
+                        </li>
+                        <li class="small mb-3"><a href="#">Soporte técnico</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 border-start ps-5">
+                    <h5 class="mb-3">Sobre nosotros</h5>
+                    <p class="small">
+                        BrestonBank es una entidad con IBAN español, adherida al Fondo de
+                        Garantía Español y al Eurosistema.
+                    </p>
+                    <p class="small">
+                        Su domicilio social está en Madrid al igual que sus sedes
+                        operativas. En caso de dudas o problemas contactar con el soporte
+                        ténico.
+                    </p>
+                    <div class="mt-5 d-flex">
+                        <a href="#" class="me-2"><img src="img/facebook.svg" alt="Facebook" width="32" /></a>
+                        <a href="#" class="me-2"><img src="img/instagram.svg" alt="Instagram" width="32" /></a>
+                        <a href="#" class="me-2"><img src="img/linkedin.svg" alt="linkedin" width="32" /></a>
+                        <a href="#" class="me-2"><img src="img/twitter.svg" alt="Twitter" width="32" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-5 pb-4" id="footer-end">
+            <div class="d-flex justify-content-around align-items-center flex-wrap">
+                <p class="small">BrestonBank S.A. 2022</p>
+                <p class="small">Diseño de Interfaces Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="navbar.js"></script>
+    <!--BOOTSTRAP SCRIPT COMPLETO-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
