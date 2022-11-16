@@ -101,6 +101,9 @@ p {
   #hero img {
     padding-left: var(--m-56);
   }
+  #features div:first-child {
+    order: 2;
+  }
   :root {
     --m-12: 8px;
     --m-16: 12px;
